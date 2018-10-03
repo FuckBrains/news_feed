@@ -97,7 +97,7 @@ if __name__ == '__main__':
               'lan': 'zh', 'ctp': 1}  # lan ctp 固定参数
 
     data = urlencode(params)
-    print('test on Web Browser' + TTS_URL + '?' + data)
+    print('test on Web Browser [' + TTS_URL + '?' + data + ']')
 
     req = Request(TTS_URL, data.encode('utf-8'))
 
