@@ -24,8 +24,8 @@ API_KEY = 'XWRTt6KfulGHpZNVky1Q2yjQ'
 SECRET_KEY = 'dGww9QOXLrHZHuVc6P5lpDewlj9Arf0B'
 
 # TEXT = "百度美研欢迎田浩老师。";
-TEXT = "在第三章中，我们介绍forward propagation neural network的时候，相邻的两层之间，前一层的每一个neuron（或输入层的每一个单元）与后一层的每一个神经元都有连接，这种情况称为fully connected network。";
-
+# TEXT = "在第三章中，我们介绍forward propagation neural network的时候，相邻的两层之间，前一层的每一个neuron（或输入层的每一个单元）与后一层的每一个神经元都有连接，这种情况称为fully connected network。";
+TEXT = "欢迎您来百度";
 # 发音人选择, 0为普通女声，1为普通男生，3为情感合成-度逍遥，4为情感合成-度丫丫，默认为普通女声
 # PER = 4
 PER = 0
@@ -89,8 +89,8 @@ def fetch_token():
 """  TOKEN end """
 
 if __name__ == '__main__':
-    token = fetch_token()
     import pdb;pdb.set_trace()
+    token = fetch_token()
     tex = quote_plus(TEXT)  # 此处TEXT需要两次urlencode
     print(tex)
     params = {'tok': token, 'tex': tex, 'per': PER, 'spd': SPD, 'pit': PIT, 'vol': VOL, 'aue': AUE, 'cuid': CUID,
