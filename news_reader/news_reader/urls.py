@@ -18,7 +18,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^news/', include('aggregate_and_read.urls')),
+    url(r'^news/', include('news.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 
@@ -30,6 +30,6 @@ urlpatterns = [
 # from django.contrib import admin
 #
 # urlpatterns = [
-#     path('news/', include('aggregate_and_read.urls')),
+#     path('templates/', include('aggregate_and_read.urls')),
 #     path('admin/', admin.site.urls),
 # ]

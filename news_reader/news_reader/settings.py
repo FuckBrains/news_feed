@@ -37,7 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'news'
 ]
+
+SETTINGS_PATH = os.path.normpath(os.path.dirname(__file__))
+print 'SETTINGS_PATH'
+print SETTINGS_PATH
+TEMPLATE_DIRS = (
+    os.path.join(SETTINGS_PATH, 'templates'),
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
