@@ -1,11 +1,27 @@
+{% load static %}
+<script type="text/javascript" src="{% static "news/jquery-3.3.1.js" %}"></script>
+
+
 <ul>
 {% for card in top_five_cards %}
     <li>
+        <div>
+            <img src={{ card.pic_url }} />
+        </div>
         {{ card.text |safe }}
-        <button>Play Audio</button>
+        <button >Play Audio</button>
+
+
     </li>
 {% endfor %}
-    <h1> total {{ count }} !</h1>
 </ul>
+<h1> 微博数 {{ count }} </h1>
+<button id="btn1">Do it!</button>
+<script type="text/javascript" src="{% static "news/logic.js" %}"></script>
+
+<img src="{% static "news/example.jpg" %}" alt="My image"/>
+
+
+
 
 
