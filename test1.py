@@ -23,9 +23,8 @@ API_KEY = 'XWRTt6KfulGHpZNVky1Q2yjQ'
 # SECRET_KEY = '544ca4657ba8002e3dea3ac2f5fdd241'
 SECRET_KEY = 'dGww9QOXLrHZHuVc6P5lpDewlj9Arf0B'
 
-# TEXT = "百度美研欢迎田浩老师。";
 # TEXT = "在第三章中，我们介绍forward propagation neural network的时候，相邻的两层之间，前一层的每一个neuron（或输入层的每一个单元）与后一层的每一个神经元都有连接，这种情况称为fully connected network。";
-TEXT = "欢迎您来百度";
+TEXT = "她是中囯绝色美人，入狱6年，出狱后更是一发不可收拾，写下了轰动世界的一本书";
 # 发音人选择, 0为普通女声，1为普通男生，3为情感合成-度逍遥，4为情感合成-度丫丫，默认为普通女声
 # PER = 4
 PER = 0

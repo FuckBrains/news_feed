@@ -45,7 +45,9 @@ def index(request):
     }
     # print 'haha'
     # import pdb;pdb.set_trace()
+    # renminribao_url = 'https://m.weibo.cn/api/container/getIndex?containerid=102803'
     renminribao_url = 'https://m.weibo.cn/api/container/getIndex?containerid=1076032803301701'
+
     # response = urllib2.urlopen(renminribao_url)
     # response = urllib2.urlopen('http://python.org/')
     #
