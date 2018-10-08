@@ -130,4 +130,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'news/static/'),
+    os.path.join(BASE_DIR, 'short_video/static/'),
 )

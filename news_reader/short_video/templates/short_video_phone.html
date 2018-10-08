@@ -3,5 +3,11 @@
 
 <h1>Haha {{ name }}</h1>
 
+<video width="400" controls>
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="{% static 'short_video/dongqian.mp4' %}" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
 <script type="text/javascript" src="{% static "short_video/workhorse.js" %}"></script>
 

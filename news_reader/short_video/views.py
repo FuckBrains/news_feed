@@ -20,4 +20,5 @@ def index(request):
     context = {
         'name': 'Daming',
     }
+
     return HttpResponse(template.render(context, request))
