@@ -9,7 +9,7 @@ $(".audio").click(function(){
     + soundFilePath + "\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
 
 });
-console.log('hehehehe');
+console.log('logic.js');
 
 function playSound(soundFilePath) {
   console.log('playSound');
