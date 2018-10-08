@@ -19,6 +19,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^news/', include('news.urls')),
+    url(r'^short_video/', include('short_video.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 

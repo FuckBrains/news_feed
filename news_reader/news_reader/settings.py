@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'news'
+    'news',
+    'short_video',
 ]
 
 SETTINGS_PATH = os.path.normpath(os.path.dirname(__file__))
