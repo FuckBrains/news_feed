@@ -6,12 +6,23 @@
 
 
 #video_cover {
-    position:absolute;
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
     bottom: 0;
+    left: 0;
+}
+
+#video_comments {
+    background-color:#099;
+    position: absolute;
+    z-index: 1;
+    min-height: 150px;
+    width: 400px;
+    opacity: 0.3;
+    right: 0;
+    bottom: 60px;
     left: 0;
 
 }

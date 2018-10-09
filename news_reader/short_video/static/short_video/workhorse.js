@@ -5,6 +5,8 @@ console.log('haha');
 //  this.play();
 //};
 
+
+
 $(document).ready(function(){
     console.log('doc ready');
     $("#video_cover").click(function() {
