@@ -20,9 +20,9 @@
     z-index: 1;
     min-height: 150px;
     width: 400px;
-    opacity: 0.3;
+    opacity: 0.5;
     right: 0;
     bottom: 60px;
     left: 0;
-
+    color: red;
 }
