@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'news',
     'short_video',
+    'english_tts',
 ]
 
 SETTINGS_PATH = os.path.normpath(os.path.dirname(__file__))
@@ -131,4 +132,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'news/static/'),
     os.path.join(BASE_DIR, 'short_video/static/'),
+    os.path.join(BASE_DIR, 'english_tts/static/'),
 )
