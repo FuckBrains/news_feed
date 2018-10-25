@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^news/', include('news.urls')),
     url(r'^short_video/', include('short_video.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^english_tts/', include('english_tts.urls')),
 ]
 
 # urlpatterns = [
