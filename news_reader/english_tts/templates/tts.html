@@ -1,3 +1,23 @@
-<h1>Say this : </h1>
+{% load static %}
+<div>
+<script type="text/javascript"
+        src='{% static "english_tts/jquery-3.3.1.js" %}'>
+</script>
 
+<script type="text/javascript"
+        src='{% static "english_tts/logic.js" %}'>
+</script>
+
+
+<span id="dummy"></span>
+
+
+
+
+<h1>百度同声传译 </h1>
+<h3>Say this:</h3>
 <div>{{ english_sentence }}</div>
+<br />
+<button class="audio" value={{ card.tts_url }}>Play Audio</button>
+
+</div>

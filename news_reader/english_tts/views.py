@@ -79,11 +79,27 @@ def index(request):
 
 
     sentence_1 = 'President Bush meets with Russian President Putin in Moscow'
-    sentence_2 = "Baidu started a business 18 years ago and caught up with the Internet. In 2000, there were only 10 million Internet users in China. \n Today, internet users in China are over 800 million. The impact of AI on society, will be far more than the Internet, over the past 20 years, we all feel the Internet brings convenience to us. In the next few decades, we'll experience AI's impact on society more deeply."
+    sentence_2 = "Baidu started a business 18 years ago and caught up with the Internet."
+
+    sentence_3 = "Baidu started a business 18 years ago and caught up with the Internet. In 2000, there were only 10 million Internet users in China. Today, internet users in China are over 800 million. The impact of AI on society, will be far more than the Internet, over the past 20 years, we all feel the Internet brings convenience to us. In the next few decades, we'll experience AI's impact on society more deeply."
+
+
+    # auido urls
+
+    # Baidu started a business
+    url1 = 'http://tsn.baidu.com/text2audio?tex=Baidu%2Bstarted%2Ba%2Bbusiness&tok=24.960c66ace78789a9a389649a5e936bc9.2592000.1543099285.282335-14336126&lan=zh&aue=3&ctp=1&cuid=123456PYTHON&vol=5&pit=5&spd=7&per=0'
+
+    # 18 years ago
+    url2 = 'http://tsn.baidu.com/text2audio?tex=18%2Byears%2Bago&tok=24.960c66ace78789a9a389649a5e936bc9.2592000.1543099285.282335-14336126&lan=zh&aue=3&ctp=1&cuid=123456PYTHON&vol=5&pit=5&spd=7&per=0###'
+
+    # and caught up with the Internet
+    url3 = 'http://tsn.baidu.com/text2audio?tex=and%2Bcaught%2Bup%2Bwith%2Bthe%2BInternet.&tok=24.960c66ace78789a9a389649a5e936bc9.2592000.1543099285.282335-14336126&lan=zh&aue=3&ctp=1&cuid=123456PYTHON&vol=5&pit=5&spd=7&per=0'
+
 
     context = {
         # 'english_sentence': 'this is an English sentence!'
-        'english_sentence': sentence_2
+        'english_sentence': sentence_2,
+        'audio_array': [url1, url2, url3]
     }
 
     # >>> Baidu TTS
