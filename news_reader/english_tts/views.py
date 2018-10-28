@@ -132,7 +132,7 @@ def index(request):
         tex = quote_plus(good)
         params = {'tok': token, 'tex': tex, 'per': PER, 'spd': SPD, 'pit': PIT, 'vol': VOL,
                   'aue': AUE, 'cuid': CUID,
-                  'lan': 'zh', 'ctp': 1}
+                  'lan': 'en', 'ctp': 1}
         data = urlencode(params)
         cur_audio_url = TTS_URL + '?' + data
         # print 'TEXT'
