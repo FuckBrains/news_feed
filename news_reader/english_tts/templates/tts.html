@@ -4,15 +4,37 @@
         src='{% static "english_tts/jquery-3.3.1.js" %}'>
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
 <script type="text/javascript"
         src='{% static "english_tts/logic.js" %}'>
 </script>
 
+<script type="text/javascript"
+        src='{% static "english_tts/tts_per_word.js" %}'>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
 
 <span id="dummy"></span>
 
+<div id="example">
+  <p>Original message: "{{ message }}"</p>
+  <p>Computed reversed message: "{{ reversedMessage }}"</p>
+</div>
+
+<div id="watch-example">
+  <p>
+    Ask a yes/no question:
+    <input v-model="question">
+  </p>
+  <p>{{ answer }}</p>
+</div>
 
 
+<form action="/action_page.php">
+  Type in words: <input type="text" name="words"><br>
+</form>
 
 <h1>百度同声传译 </h1>
 <h3>Say this:</h3>
