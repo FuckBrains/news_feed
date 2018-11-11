@@ -35,7 +35,7 @@ clips.append(clip1)
 
 audioclip = AudioFileClip("ig_34sec.mp3")
 concat_clip = concatenate_videoclips(clips, method="compose").set_audio(audioclip.set_duration(33))
-concat_clip.write_videofile('haha.webm',fps=25)
+concat_clip.write_videofile('ig_champion.webm',fps=25)
 
 
 # clipISC = ImageSequenceClip(['p2.png', 'p3.png'], fps=24)
@@ -47,7 +47,7 @@ concat_clip.write_videofile('haha.webm',fps=25)
 #
 compo = CompositeAudioClip([audioclip.volumex(1.2)])
 
-final_clip = concatenate_videoclips([clip1, clip2]).set_audio(audioclip.set_duration(clip1.duration + clip2.duration))
+final_clip = concatenate_videoclips([clip1]).set_audio(audioclip.set_duration(clip1.duration))
 
 
 # concat_clip.write_videofile("test.mp4")
