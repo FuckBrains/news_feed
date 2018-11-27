@@ -28,13 +28,14 @@ txt_clip = txt_clip.set_pos('bottom').set_duration(5)
 
 
 img = ['p0.png', 'p1.png','p2.png', 'p3.png']
+img = ['f0.jpeg', 'f1.jpeg', 'f2.jpeg', 'f3.jpeg', 'f4.jpeg', 'f5.jpeg', 'f6.jpeg', 'f7.jpeg', 'f8.jpeg', 'f9.jpeg', ]
 
-clips = [ImageClip(m).set_duration(5) for m in img]
+clips = [ImageClip(m).set_duration(4) for m in img]
 clips.append(clip1)
 
-audioclip = AudioFileClip("ig_34sec.mp3")
-concat_clip = concatenate_videoclips(clips, method="compose").set_audio(audioclip.set_duration(33))
-concat_clip.write_videofile('ig_champion.webm',fps=25)
+audioclip = AudioFileClip("fire_49.mp3")
+concat_clip = concatenate_videoclips(clips, method="compose").set_audio(audioclip.set_duration(40))
+concat_clip.write_videofile('fire_cal.webm',fps=25)
 
 
 # clipISC = ImageSequenceClip(['p2.png', 'p3.png'], fps=24)
@@ -56,5 +57,3 @@ video = CompositeVideoClip([final_clip, txt_clip])
 #
 # # Write the result to a file (many options available !)
 video.write_videofile("output.mp4")
-
-
